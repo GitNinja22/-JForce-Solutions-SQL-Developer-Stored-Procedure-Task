@@ -27,8 +27,4 @@ CALL GetDepartmentSummary('Legal');
 - `EmployeeSalaryGrade`: C below ₹30,000; B from ₹30,000 through ₹60,000; A above ₹60,000.
 - `GetDepartmentSummary`: Uses `COUNT`, `AVG`, `MAX`, `MIN`, and `SUM`. If the department has no employee rows, it returns a message.
 
-## Notes
-- The script uses `DELIMITER $$`, supported by MySQL Workbench, so procedure bodies can contain semicolons.
-- The scripts use `DROP PROCEDURE IF EXISTS` and `DROP TABLE IF EXISTS` to make reruns straightforward. **Warning:** rerunning `database.sql` drops and recreates the sample `employees` table, so it deletes any changes you made to that table.
-
 
