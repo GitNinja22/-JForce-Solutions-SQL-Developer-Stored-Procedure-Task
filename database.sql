@@ -1,5 +1,4 @@
 -- JForce Solutions: Employee Management and Payroll
--- Run this script first in MySQL Workbench.
 
 CREATE DATABASE IF NOT EXISTS jforce_payroll;
 USE jforce_payroll;
@@ -28,10 +27,9 @@ VALUES
 (106, 'Ananya Iyer',   'Finance', 'Accountant',48000.00, '2022-09-12', 'Active'),
 (107, 'Kabir Joshi',   'Finance', 'Finance Manager',     85000.00, '2019-04-18', 'Active'),
 (108, 'Meera Nair',    'Operations','Operations Associate',29000.00, '2024-02-26', 'Active'),
-(109, 'Ishaan Gupta',  'Operations','Team Lead',           61000.00, '2021-05-30', 'Inactive'),
-(110, 'Sara Khan',     'Sales', 'Sales Executive',     42000.00, '2023-08-14', 'Active'),
-(111, 'Dev Malhotra',  'Sales', 'Sales Manager',       78000.00, '2020-12-01', 'Active'),
-(112, 'Tara Desai',    'IT',  'QA Engineer',          60000.00, '2022-12-19', 'Inactive');
+(109, 'Ishaan Gupta',  'Operations','Team Lead',61000.00, '2021-05-30', 'Inactive'),
+(110, 'Sara Khan',     'Sales', 'Sales Executive',42000.00, '2023-08-14', 'Active'),
+(111, 'Dev Malhotra',  'Sales', 'Sales Manager', 78000.00, '2020-12-01', 'Active'),
+(112, 'Tara Desai',    'IT',  'QA Engineer',60000.00, '2022-12-19', 'Inactive');
 
 select * from employees;
-select department,basic_salary from employees where department = 'IT' and basic_salary >= 50000;
