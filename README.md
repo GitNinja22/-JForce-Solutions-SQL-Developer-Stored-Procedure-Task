@@ -30,6 +30,5 @@ CALL GetDepartmentSummary('Legal');
 ## Notes
 - The script uses `DELIMITER $$`, supported by MySQL Workbench, so procedure bodies can contain semicolons.
 - The scripts use `DROP PROCEDURE IF EXISTS` and `DROP TABLE IF EXISTS` to make reruns straightforward. **Warning:** rerunning `database.sql` drops and recreates the sample `employees` table, so it deletes any changes you made to that table.
-- `CHECK` constraints are enforced by MySQL 8.0.16 and later.
 
 
